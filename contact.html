@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html> 
+    <head>
+        <title>Contact Page</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name = 'viewport' content = "width=device-width, initiascale=1"> 
+    </head>
+    
+    <style>       
+        input[type=text], select, textarea {
+          width: 100%; /* Full width */
+          padding: 12px; /* Some padding */ 
+          border: 1px solid #ccc; /* Gray border */
+          border-radius: 4px; /* Rounded borders */
+          box-sizing: border-box; /* Make sure that padding and width stays in place */
+          margin-top: 6px; /* Add a top margin */
+          margin-bottom: 16px; /* Bottom margin */
+          resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+        }
+    </style>
+    
+    <body>
+        <nav class="menubar">
+            <a href="index.html" class="menubar">Home</a>
+            <a href="getinvolved.html" class="menubar">Get Involved</a>
+            <a href="contact.html" class="menubar">Contact</a>
+        </nav>
+        
+         <a href = "https://docs.google.com/forms/d/e/1FAIpQLSe306IlEu3RKgCUtGkIp0MB1eYZRgeuCLY5AcjuE57ouXQuVg/viewform"><button id = "donate">DONATE</button></a>
+        
+        <header class = "headerimage">
+            <h1 class = "headtext">Questions, comments, or suggestions?</h1>
+            <img src="volunteer.jpg" id = "cover">
+        </header>
+        
+        <div class="contactform">
+          <form action="action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <br><label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+        
+        <footer>
+            <p class="footerNote">Swipe on the Run is a registered 501(c)(3) nonprofit in Medford, MA</p>
+        </footer>
+    </body>
+</html>
